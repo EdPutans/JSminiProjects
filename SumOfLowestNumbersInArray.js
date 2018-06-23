@@ -7,4 +7,4 @@ function sumTwoSmallestNumbers(numbers) {
   var toDeleteSecond=numbers.indexOf(smallest2)
   numbers.splice(toDeleteSecond,1)
   return smallest+smallest2
-};
+}
