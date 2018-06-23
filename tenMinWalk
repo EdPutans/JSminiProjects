@@ -1,0 +1,27 @@
+/* not the most elegant solution, but it works. 
+It checks if sum of directions === 0, meaning 
+the guy returns to his initial position */
+
+function isValidWalk(walk) {
+console.log(walk)
+if (walk.length>10){return false}
+if (walk.length<10){return false}
+if (walk.length=10){
+var N=[]
+var S=[]
+var E=[]
+var W=[]
+var EW=1
+for (let i=0;i<walk.length;i++){
+  if (walk[i]==='n'){N.push('n')}
+  if (walk[i]==='e'){E.push('e')}
+  if (walk[i]==='w'){W.push('w')}
+  if (walk[i]==='s'){S.push('s')}}
+if (N.length===S.length){var NS=1}
+if (N.length!=S.length){var NS=0}
+if (W.length===E.length){var EW=1}
+if (E.length!=W.length){var EW=0}
+if (EW+NS===2){return true}
+if (EW+NS===1){return false}
+}
+}
